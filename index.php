@@ -13,14 +13,14 @@
     $mail->isSMTP();
     $mail->Host = "smtp.hostinger.com";
     $mail->SMTPAuth = true;
-    $mail->Username = "umsa_pruebas@umsasi.com";
-    $mail->Password = "Sanjuanita50$";
+    $mail->Username = "umsa_pruebas";
+    $mail->Password = "";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->setFrom("umsa_pruebas@umsasi.com", "UMSA Pruebas");
-    $mail->addAddress('novosrpf@gmail.com');
-    $mail->addCC('ruben.palos@aguascalientes.gob.mx');
+    $mail->setFrom("umsa_pruebas", "UMSA Pruebas");
+    $mail->addAddress('novosrpf');
+    $mail->addCC('ruben');
     $mail->isHTML(true);
     $mail->Subject = "Prueba de envio";
     $mail->Body = "Hola, esta es una <b>prueba</b> de envio de correo";
